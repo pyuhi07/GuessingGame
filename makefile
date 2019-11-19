@@ -7,10 +7,11 @@ readme.txt:
 	#touch readme.md
 	echo " # Coursera Project" > readme.md
 	echo " ## The guessing game" >> readme.md
+	echo "------"
 	date >> readme.md
-	echo " ----- " >> readme.md
+	echo "----- " >> readme.md
 	echo " " >> readme.md
-	echo "no of lines of code in guessinggame.sh are : " >> readme.md
+	echo "*no of lines of code in guessinggame.sh are :* " >> readme.md
 	wc -l guessinggame.sh | egrep -o "[0-9]+" >> readme.md
 
 clean:
